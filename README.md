@@ -42,11 +42,11 @@ public function configureFields(string $pageName): iterable
 }
 ```
 
-[ico-version]: https://poser.pugx.org/setono/easyadmin-editorjs-bundle/v/stable
-[ico-license]: https://poser.pugx.org/setono/easyadmin-editorjs-bundle/license
-[ico-github-actions]: https://github.com/Setono/easyadmin-editorjs-bundle/workflows/build/badge.svg
-[ico-code-coverage]: https://codecov.io/gh/Setono/easyadmin-editorjs-bundle/branch/master/graph/badge.svg
+[ico-version]: https://poser.pugx.org/gitoido/easyadmin-editorjs-bundle/v/stable
+[ico-license]: https://poser.pugx.org/gitoido/easyadmin-editorjs-bundle/license
+[ico-github-actions]: https://github.com/gitoido/easyadmin-editorjs-bundle/workflows/build/badge.svg
+[ico-code-coverage]: https://codecov.io/gh/gitoido/easyadmin-editorjs-bundle/branch/master/graph/badge.svg
 
 [link-packagist]: https://packagist.org/packages/setono/easyadmin-editorjs-bundle
-[link-github-actions]: https://github.com/Setono/easyadmin-editorjs-bundle/actions
-[link-code-coverage]: https://codecov.io/gh/Setono/easyadmin-editorjs-bundle
+[link-github-actions]: https://github.com/gitoido/easyadmin-editorjs-bundle/actions
+[link-code-coverage]: https://codecov.io/gh/gitoido/easyadmin-editorjs-bundle
