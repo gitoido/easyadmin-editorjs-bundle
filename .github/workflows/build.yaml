@@ -124,7 +124,7 @@ jobs:
                 with:
                     php-version: "${{ matrix.php-version }}"
                     extensions: "${{ env.PHP_EXTENSIONS }}"
-                    coverage: "none"
+                    coverage: "xdebug"
                     tools: "flex"
 
             -   name: "Install composer dependencies"
