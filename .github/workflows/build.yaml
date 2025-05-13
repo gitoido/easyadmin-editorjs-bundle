@@ -16,14 +16,17 @@ jobs:
         strategy:
             matrix:
                 php-version:
+                    - "8.1"
+                    - "8.2"
                     - "8.3"
+                    - "8.4"
 
                 dependencies:
                     - "highest"
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -54,8 +57,10 @@ jobs:
         strategy:
             matrix:
                 php-version:
+                    - "8.1"
                     - "8.2"
                     - "8.3"
+                    - "8.4"
 
                 dependencies:
                     - "highest"
@@ -67,10 +72,11 @@ jobs:
                     - "~6.3.0"
                     - "~7.0.0"
                     - "~7.1.0"
+                    - "~7.2.0"
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -101,8 +107,10 @@ jobs:
         strategy:
             matrix:
                 php-version:
+                    - "8.1"
                     - "8.2"
                     - "8.3"
+                    - "8.4"
 
                 dependencies:
                     - "highest"
@@ -114,10 +122,11 @@ jobs:
                     - "~6.3.0"
                     - "~7.0.0"
                     - "~7.1.0"
+                    - "~7.2.0"
                 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -145,8 +154,10 @@ jobs:
         strategy:
             matrix:
                 php-version:
+                    - "8.1"
                     - "8.2"
                     - "8.3"
+                    - "8.4"
 
                 dependencies:
                     - "highest"
@@ -158,10 +169,11 @@ jobs:
                     - "~6.3.0"
                     - "~7.0.0"
                     - "~7.1.0"
+                    - "~7.2.0"
                 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -189,14 +201,17 @@ jobs:
         strategy:
             matrix:
                 php-version:
+                    - "8.1"
+                    - "8.2"
                     - "8.3"
+                    - "8.4"
 
                 dependencies:
                     - "highest"
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
