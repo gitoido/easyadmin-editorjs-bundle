@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.2",
         "easycorp/easyadmin-bundle": "^4.0",
         "setono/editorjs-bundle": "^1.0",
         "setono/editorjs-php": "^1.0",
