@@ -10,7 +10,6 @@ use Setono\EasyadminEditorjsBundle\DependencyInjection\SetonoEasyadminEditorjsEx
 
 final class SetonoEasyadminEditorjsExtensionTest extends AbstractExtensionTestCase
 {
-
     #[Override]
     protected function getContainerExtensions(): array
     {
