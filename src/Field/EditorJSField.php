@@ -6,6 +6,7 @@ namespace Setono\EasyadminEditorjsBundle\Field;
 
 use EasyCorp\Bundle\EasyAdminBundle\Contracts\Field\FieldInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Field\FieldTrait;
+use Override;
 use Setono\EasyadminEditorjsBundle\Form\Type\EditorJSType;
 use Webmozart\Assert\Assert;
 
@@ -15,6 +16,7 @@ final class EditorJSField implements FieldInterface
 
     public const OPTION_EDITORJS_CONFIG = 'editorjsConfig';
 
+    #[Override]
     public static function new(string $propertyName, ?string $label = null): self
     {
         return (new self())

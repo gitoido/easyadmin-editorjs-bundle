@@ -63,7 +63,6 @@
         "analyse": "psalm",
         "check-style": "ecs check",
         "fix-style": "ecs check --fix",
-        "phpspec": "phpspec run",
-        "phpunit": "phpunit"
+        "phpunit": "XDEBUG_MODE=coverage phpunit"
     }
 }

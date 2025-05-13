@@ -8,6 +8,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext;
 use EasyCorp\Bundle\EasyAdminBundle\Contracts\Field\FieldConfiguratorInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Dto\EntityDto;
 use EasyCorp\Bundle\EasyAdminBundle\Dto\FieldDto;
+use Override;
 use Setono\EasyadminEditorjsBundle\Field\EditorJSField;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
@@ -20,11 +21,13 @@ final class EditorJSConfigurator implements FieldConfiguratorInterface
     ) {
     }
 
+    #[Override]
     public function supports(FieldDto $field, EntityDto $entityDto): bool
     {
         return EditorJSField::class === $field->getFieldFqcn();
     }
 
+    #[Override]
     public function configure(FieldDto $field, EntityDto $entityDto, AdminContext $context): void
     {
         /** @var array{tools: array{image: array{config: array{endpoints: array{byFile: string, byUrl: string}}}}} $config */

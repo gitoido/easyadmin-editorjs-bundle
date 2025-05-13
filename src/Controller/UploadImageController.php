@@ -59,6 +59,10 @@ final class UploadImageController
         }
 
         $image = file_get_contents($data['url']);
+        if ($image === false) {
+            return self::createFailedResponse('The image could not be read');
+        }
+
         $temporaryFilename = $this->filesystem->tempnam($this->uploadDirectory, 'image');
         $this->filesystem->dumpFile($temporaryFilename, $image);
 

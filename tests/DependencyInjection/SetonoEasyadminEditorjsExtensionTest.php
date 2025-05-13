@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace Setono\EasyadminEditorjsBundle\Tests\DependencyInjection;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
+use Override;
 use Setono\EasyadminEditorjsBundle\DependencyInjection\SetonoEasyadminEditorjsExtension;
 
 final class SetonoEasyadminEditorjsExtensionTest extends AbstractExtensionTestCase
 {
+
+    #[Override]
     protected function getContainerExtensions(): array
     {
         return [
